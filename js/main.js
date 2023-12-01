@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
       nombre: "Base jabón blanca",
       precio: 41000,
       categoria: "Base",
-      imagen: "/images/base-jabón-blanca.jpg",
+      imagen: "images/base-jabón-blanca.jpg",
     },
 
     {
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
       nombre: "Base jabón transparente",
       precio: 43000,
       categoria: "Base",
-      imagen: "/images/base-jabón-transparente.jpg",
+      imagen: "images/base-jabón-transparente.jpg",
     },
 
     {
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
       nombre: "Base acondicionador",
       precio: 56600,
       categoria: "Base",
-      imagen: "/images/base-acondicionador.jpg",
+      imagen: "images/base-acondicionador.jpg",
     },
 
     {
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
       nombre: "Base crema corporal",
       precio: 56600,
       categoria: "Base",
-      imagen: "/images/base-crema-corporal.jpg",
+      imagen: "images/base-crema-corporal.jpg",
     },
 
     {
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
       nombre: "Base shampoo",
       precio: 54600,
       categoria: "Base",
-      imagen: "/images/base-shampoo.jpg",
+      imagen: "images/base-shampoo.jpg",
     },
 
     {
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
       nombre: "Color amarillo",
       precio: 8300,
       categoria: "Pigmento",
-      imagen: "/images/color-amarillo.jpg",
+      imagen: "images/color-amarillo.jpg",
     },
 
     {
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
       nombre: "Color azul",
       precio: 8300,
       categoria: "Pigmento",
-      imagen: "/images/color-azul.jpg",
+      imagen: "images/color-azul.jpg",
     },
 
     {
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
       nombre: "Color cyan",
       precio: 8300,
       categoria: "Pigmento",
-      imagen: "/images/color-cyan.jpg",
+      imagen: "images/color-cyan.jpg",
     },
 
     {
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
       nombre: "Color café",
       precio: 8300,
       categoria: "Pigmento",
-      imagen: "/images/color-café.jpg",
+      imagen: "images/color-café.jpg",
     },
 
     {
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
       nombre: "Color rojo",
       precio: 8300,
       categoria: "Pigmento",
-      imagen: "/images/color-rojo.jpg",
+      imagen: "images/color-rojo.jpg",
     },
 
     {
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
       nombre: "Color fucsia",
       precio: 8300,
       categoria: "Pigmento",
-      imagen: "/images/color-fucsia.jpg",
+      imagen: "images/color-fucsia.jpg",
     },
 
     {
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
       nombre: "Color negro",
       precio: 8300,
       categoria: "Pigmento",
-      imagen: "/images/color-negro.jpg",
+      imagen: "images/color-negro.jpg",
     },
 
     {
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
       nombre: "Caléndula",
       precio: 4500,
       categoria: "Ingredientes",
-      imagen: "/images/caléndula.jpg",
+      imagen: "images/caléndula.jpg",
     },
 
     {
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function () {
       nombre: "Lavanda",
       precio: 4500,
       categoria: "Ingredientes",
-      imagen: "/images/lavanda.jpg",
+      imagen: "images/lavanda.jpg",
     },
 
     {
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
       nombre: "Manzanilla",
       precio: 4500,
       categoria: "Ingredientes",
-      imagen: "/images/manzanilla.jpg",
+      imagen: "images/manzanilla.jpg",
     },
 
     {
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function () {
       nombre: "Menta",
       precio: 4500,
       categoria: "Ingredientes",
-      imagen: "/images/menta.jpg",
+      imagen: "images/menta.jpg",
     },
 
     {
@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function () {
       nombre: "Romero",
       precio: 4500,
       categoria: "Ingredientes",
-      imagen: "/images/romero.jpg",
+      imagen: "images/romero.jpg",
     },
 
     {
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function () {
       nombre: "Rosas",
       precio: 4500,
       categoria: "Ingredientes",
-      imagen: "/images/rosas.jpg",
+      imagen: "images/rosas.jpg",
     },
 
     {
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function () {
       nombre: "Sal del Himalaya",
       precio: 4500,
       categoria: "Ingredientes",
-      imagen: "/images/sal-del-himalaya.jpg",
+      imagen: "images/sal-del-himalaya.jpg",
     },
   ];
 
