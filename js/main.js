@@ -239,7 +239,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const totalResumenElement = document.getElementById('total-resumen');
     const modal = document.getElementById('modal');
     const modalContenido = document.querySelector('.modal-contenido');
-
     resumenCarrito.innerHTML = '';
     let totalResumen = 0;
 
@@ -299,4 +298,20 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   mostrarProductos(datosProductos);
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  var botonFlotante = document.getElementById('boton-flotante');
+  var footer = document.querySelector('footer');
+
+  window.addEventListener('scroll', function() {
+      var scrollHeight = window.scrollY + window.innerHeight;
+      var footerOffset = footer.offsetTop;
+
+      if (scrollHeight > footerOffset) {
+          botonFlotante.style.bottom = (scrollHeight - footerOffset + 20) + 'px';
+      } else {
+          botonFlotante.style.bottom = '20px';
+      }
+  });
 });

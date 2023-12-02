@@ -209,3 +209,43 @@ h1 {
   border: olivedrab;
   border-radius: 1px;
 }
+
+footer {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+footer div {
+  display: flex;
+  margin: 6px;
+
+}
+
+.negociosverdes {
+  height: 150px;
+}
+
+footer div div {
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  text-align-last: left;
+  font-size: 14px;
+}
+
+footer div div p {
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.redes a {
+  margin: 10px;
+}
+
+.redes a img {
+  width: 30px;
+}
