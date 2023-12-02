@@ -56,13 +56,36 @@
     </div>
   </nav>
 
+  <!-- API -->
+  <div class="apiContainer">
+    <p>Calidad del aire en: </p>
+  <script type="text/javascript" charset="utf-8">
+    (function (w, d, t, f) {
+      w[f] = w[f] || function (c, k, n) {
+        s = w[f], k = s['k'] = (s['k'] || (k ? ('&k=' + k) : '')); s['c'] =
+          c = (c instanceof Array) ? c : [c]; s['n'] = n = n || 0; L = d.createElement(t), e = d.getElementsByTagName(t)[0];
+        L.async = 1; L.src = '//feed.aqicn.org/feed/' + (c[n].city) + '/' + (c[n].lang || 'es') + '/feed.v1.js?n=' + n + k;
+        e.parentNode.insertBefore(L, e);
+      };
+    })(window, document, 'script', '_aqiFeed');    
+  </script>
+
+  <span id="city-aqi-container"></span>
+  <script type="text/javascript" charset="utf-8">
+    _aqiFeed({ container: "city-aqi-container", city: "beijing" });  
+  </script>
+</div>
+  <!-- || -->
+
   <div class="contenedorBotonCarrito">
-        <button type="button" class="botonCarritoFlotante position-relative" onclick="mostrarCarrito()"><svg xmlns="http://www.w3.org/2000/svg" width="36"
-        height="36" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+    <button type="button" class="botonCarritoFlotante position-relative" onclick="mostrarCarrito()"><svg
+        xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-cart"
+        viewBox="0 0 16 16">
         <path
           d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
       </svg>
-      <span id="compraRojo" class="compraRojo position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+      <span id="compraRojo"
+        class="compraRojo position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
         <span class="visually-hidden">New alerts</span>
       </span>
     </button>
@@ -80,18 +103,20 @@
     <button class="botonComprar" onclick="mostrarResumenCompra()">Comprar</button>
     <button class="botonAgregar" onclick="limpiarCarrito()">Limpiar Carrito</button>
     <button class="botonAgregar" onclick="ocultarCarrito()">Cerrar</button>
-  </aside>
+  </aside>git
 
   <div id="modal" class="modal">
     <div class="modal-contenido">
       <span class="cerrar-modal" onclick="cerrarModal()">&times;</span>
       <h2>Resumen de compra</h2>
       <ul id="resumen-carrito"></ul>
-      <p>Total: $<span id="total-resumen">0</span></p>
-      <button onclick="realizarCompra()">Confirmar Compra</button>
+      <p><b>Total: $<span id="total-resumen">0</span></b></p>
+      <button class="botonAgregar" onclick="realizarCompra()">Confirmar Compra</button>
     </div>
   </div>
-  
+
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>

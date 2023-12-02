@@ -154,11 +154,11 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   ];
 
+
   const carrito = obtenerCarritoDesdeLocalStorage() || [];
   const listaCarrito = document.getElementById('lista-carrito');
   const totalCarritoElement = document.getElementById('total-carrito');
   const carritoContainer = document.getElementById('carrito');
-
 
   function mostrarProductos(productos) {
     const contenedor = document.getElementById('contenedor-productos');
@@ -269,7 +269,23 @@ document.addEventListener('DOMContentLoaded', function () {
   window.realizarCompra = function () {
     limpiarCarrito();
     cerrarModal();
-    alert('¡Su compra ha sido realizada!');
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      background: '#A8F576',
+      didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+      }
+    })
+    
+    Toast.fire({
+      icon: 'success',
+      title: '¡Su compra ha sido realizada!'
+    })
   };
 
 
