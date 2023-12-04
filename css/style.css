@@ -249,3 +249,10 @@ footer div div p {
 .redes a img {
   width: 30px;
 }
+
+@media screen and (max-width: 689px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+}
+}
